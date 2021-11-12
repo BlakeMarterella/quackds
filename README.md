@@ -1,24 +1,27 @@
-# quackds
+# Quack by Duck Software
+A Duck Software internal project management tool
 
-## Project setup
+[Duck Software Official Website](https://ducksoftware.net)
+
+
+## Start the test/preview server
 ```
+Install the required packages:
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+Start the preview page
 npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Get inside the Node server folder:
+cd backend
 
-### Lints and fixes files
-```
-npm run lint
-```
+Install the required packages:
+npm install
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Start the mongodb server.
+mongo
+
+Start node server on http://localhost:4000/api 
+nodemon
+
+```
