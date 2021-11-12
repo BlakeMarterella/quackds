@@ -11,7 +11,7 @@ import Login from "../views/Login.vue"
 const routes = [
   // Once teh user is authenticated, bring them to the dashboard home
   {
-    path: '/',
+    path: "/",
     redirect: "/dashboard",
     component: DashboardLayout,
     children: [
@@ -20,16 +20,16 @@ const routes = [
         name: "dashboard",
         component: {
           default: Dashboard
-        }
+        },
       },
       {
         path: "/profile",
         name: "profile",
         component: {
           default: Profile
-        }
-      }
-    ]
+        },
+      },
+    ],
   },
   // If the user is not authenticated send them to this route
   {
@@ -42,11 +42,11 @@ const routes = [
         name: "login",
         component: {
           default: Login
-        }
-      }
-    ]
-  }
-]
+        },
+      },
+    ],
+  },
+];
 
 const router = createRouter({
   history: createWebHashHistory(),
