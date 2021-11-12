@@ -1,29 +1,57 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import { createRouter, createWebHashHistory } from "vue-router";
 
-Vue.use(VueRouter)
+import DashboardLayout from "@/layout/DashboardLayout";
+import LoginLayout from "@/layout/LoginLayout";
+
+import Dashboard from "../views/Dashboard.vue"
+import Profile from "../views/Profile.vue"
+import Login from "../views/Login.vue"
+
 
 const routes = [
+  // Once teh user is authenticated, bring them to the dashboard home
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: "/dashboard",
+    component: DashboardLayout,
+    children: [
+      {
+        path: "/dashboard",
+        name: "dashboard",
+        component: {
+          default: Dashboard
+        }
+      },
+      {
+        path: "/profile",
+        name: "profile",
+        component: {
+          default: Profile
+        }
+      }
+    ]
   },
+  // If the user is not authenticated send them to this route
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: "/",
+    redirect: "login",
+    component: LoginLayout,
+    children: [
+      {
+        path: "/login",
+        name: "login",
+        component: {
+          default: Login
+        }
+      }
+    ]
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
+const router = createRouter({
+  history: createWebHashHistory(),
+  linkActiveClass: "active",
+  routes,
+});
 
-export default router
+export default router;
