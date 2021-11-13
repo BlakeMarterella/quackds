@@ -3,3 +3,5 @@
     <h1>Hello World Im the navbar</h1>
   </nav>
 </template>
+<style lang="scss">
+</style>

@@ -9,7 +9,7 @@
             <page-footer></page-footer>
         </div>
     </div>
-</template>
+// </template>
 <script>
 import PageHeader from "../components/basic/Header.vue";
 import PageFooter from "../components/basic/Footer.vue";
