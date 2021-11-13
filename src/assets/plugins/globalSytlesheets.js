@@ -3,6 +3,7 @@ import GlobalInteractions from "./globalInteractions";
 
 //Add more css files if necessary
 import "../css/main.css";
+import "../main.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default {

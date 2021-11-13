@@ -4,9 +4,21 @@
     <div class="wrapper">
         <!-- TODO put the navbar here -->
         <div class="main-content">
-            <!-- TODO put the header here -->
+            <page-header></page-header>
             <router-view></router-view>
-            <!-- TODO put the footer here -->
+            <page-footer></page-footer>
         </div>
     </div>
 </template>
+<script>
+import PageHeader from "../components/basic/Header.vue";
+import PageFooter from "../components/basic/Footer.vue";
+
+export default {
+  components: {
+    PageHeader,
+    PageFooter,
+  },
+};
+</script>
+<style lang="scss"></style>

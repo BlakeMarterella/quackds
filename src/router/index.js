@@ -3,9 +3,9 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import DashboardLayout from "@/layout/DashboardLayout";
 import LoginLayout from "@/layout/LoginLayout";
 
-import Dashboard from "../views/Dashboard.vue"
-import Profile from "../views/Profile.vue"
-import Login from "../views/Login.vue"
+import Dashboard from "../views/Dashboard.vue";
+import Profile from "../views/Profile.vue";
+import Login from "../views/Login.vue";
 
 
 const routes = [
