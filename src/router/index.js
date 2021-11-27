@@ -9,7 +9,7 @@ import Login from "../views/Login.vue";
 
 
 const routes = [
-  // Once teh user is authenticated, bring them to the dashboard home
+  // Once the user is authenticated, bring them to the dashboard home
   {
     path: "/",
     redirect: "/dashboard",
