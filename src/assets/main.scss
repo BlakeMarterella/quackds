@@ -38,4 +38,5 @@
 @import "~bootstrap/scss/print";
 
 //Import custom stylesheets 
-@import "scss/compSyles/dashboardLayout.scss";
+@import "scss/compSyles/componentStyles.scss";
+@import "scss/core/coreStyles.scss"; 
