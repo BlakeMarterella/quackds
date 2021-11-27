@@ -18,14 +18,14 @@ const routes = [
       {
         path: "/dashboard",
         name: "dashboard",
-        component: {
+        components: {
           default: Dashboard
         },
       },
       {
         path: "/profile",
         name: "profile",
-        component: {
+        components: {
           default: Profile
         },
       },
@@ -35,12 +35,12 @@ const routes = [
   {
     path: "/",
     redirect: "login",
-    component: LoginLayout,
+    components: LoginLayout,
     children: [
       {
         path: "/login",
         name: "login",
-        component: {
+        components: {
           default: Login
         },
       },
