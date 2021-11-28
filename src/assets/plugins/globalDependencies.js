@@ -1,7 +1,7 @@
 import GlobalComponents from "./globalComponents";
 import GlobalInteractions from "./globalInteractions";
 
-//Add more css files if necessary
+// Add stylesheets to the website
 import "../css/main.css";
 import "../main.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';

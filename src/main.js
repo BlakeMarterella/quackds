@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import quackDependencies from "./assets/plugins/globalSytlesheets";
+import quackDependencies from "./assets/plugins/globalDependencies";
 import titleMixin from "./assets/mixins/titleMixin";
 
 const appInstance = createApp(App);
