@@ -1,5 +1,5 @@
 # Quack by Duck Software
-![Quack Project Logo](https://github.com/BlakeMarterella/quacks/blob/stc/assets/img/logo.png?raw=true)
+![Quack Project Logo](https://github.com/BlakeMarterella/quacks/blob/src/assets/img/logo.png?raw=true)
 A Duck Software internal project management tool
 
 [Duck Software Official Website](https://ducksoftware.net)
