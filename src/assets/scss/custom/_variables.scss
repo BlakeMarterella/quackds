@@ -7,7 +7,6 @@ $enable-transitions:        true !default;
 $enable-grid-classes:       true !default;
 $enable-print-styles:       true !default;
 
-
 // Color system
 $white:    #fff !default;
 $gray-100: #f6f9fc !default;
@@ -200,7 +199,13 @@ $icon-size-xl: 5rem !default;
 $icon-size-lg: 4rem !default;
 $icon-size-sm: 2rem !default;
 
+// Main content
+
+$main-content-padding-y: 40px !default;
+$main-content-padding-x: 24px !default; // in px to combine with $grid-gutter-width
+
 // Navbar
+
 $navbar-transition:                 all .15s linear !default;
 $navbar-padding-y:                  1rem !default;
 $navbar-padding-x:                  1rem !default;
@@ -248,6 +253,45 @@ $navbar-search-light-border-color:  rgba(0, 0, 0, .6) !default;
 $navbar-search-light-color:          rgba(0, 0, 0, .6) !default;
 $navbar-search-light-focus-border-color: rgba(0, 0, 0, .9) !default;
 $navbar-search-light-focus-color:    rgba(0, 0, 0, .9) !default;
+
+// Navs
+$nav-link-padding-y:                .25rem !default;
+$nav-link-padding-x:                .75rem !default;
+$nav-link-color:                    $gray-700 !default;
+$nav-link-hover-color:              theme-color("primary") !default;
+$nav-link-disabled-color:           $gray-600 !default;
+
+$nav-pills-padding-y:               .75rem !default;
+$nav-pills-padding-x:               1rem !default;
+
+$nav-pills-space-x:                 1rem !default;
+
+$nav-pills-bg:                      $white !default;
+$nav-pills-border-width:            1px !default;
+$nav-pills-border-color:            theme-color("primary") !default;
+$nav-pills-border-radius:           $border-radius !default;
+
+$nav-pills-link-color:              theme-color("primary") !default;
+$nav-pills-link-hover-color:        theme-color("primary") !default;
+$nav-pills-link-active-color:       color-yiq(theme-color("primary"), 5%) !default;
+$nav-pills-link-active-bg:          theme-color("primary") !default;
+$nav-pills-box-shadow:              0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08) !default;
+
+
+// Vertical navbar
+$navbar-vertical-box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15) !important;
+$navbar-vertical-width: 250px !default;
+$navbar-vertical-padding-x: 1.5rem !default;
+$navbar-vertical-nav-link-padding-x:  1.5rem !default;
+$navbar-vertical-nav-link-padding-y:  .65rem !default;
+
+$navbar-icon-min-width: 2.25rem !default;
+
+$navbar-breadcrumb-padding-y: $nav-link-padding-y !default;
+$navbar-breadcrumb-padding-x: 0 !default;
+
+$navbar-light-bg: $white !default;
+$navbar-light-border-color: $border-color !default;
 
 // Close
 $close-font-size:                   $font-size-base * 1.5 !default;
@@ -310,30 +354,6 @@ $btn-active-box-shadow:       none !default;
 
 $btn-hover-translate-y:       -1px !default;
 
-
-// Navs
-$nav-link-padding-y:                .25rem !default;
-$nav-link-padding-x:                .75rem !default;
-$nav-link-color:                    $gray-700 !default;
-$nav-link-hover-color:              theme-color("primary") !default;
-$nav-link-disabled-color:           $gray-600 !default;
-
-$nav-pills-padding-y:               .75rem !default;
-$nav-pills-padding-x:               1rem !default;
-
-$nav-pills-space-x:                 1rem !default;
-
-$nav-pills-bg:                      $white !default;
-$nav-pills-border-width:            1px !default;
-$nav-pills-border-color:            theme-color("primary") !default;
-$nav-pills-border-radius:           $border-radius !default;
-
-$nav-pills-link-color:              theme-color("primary") !default;
-$nav-pills-link-hover-color:        theme-color("primary") !default;
-$nav-pills-link-active-color:       color-yiq(theme-color("primary"), 5%) !default;
-$nav-pills-link-active-bg:          theme-color("primary") !default;
-$nav-pills-box-shadow:              $btn-box-shadow !default;
-
 //Pagnation
 $pagination-hover-color:            $gray-600 !default;
 $pagination-hover-bg:               $gray-300 !default;
@@ -360,5 +380,37 @@ $footer-link-hover-color: $gray-700 !default;
 $footer-heading-color: $gray-600 !default;
 $footer-heading-font-size: $font-size-sm !default;
 
+// Tables
+
+$table-cell-padding:          1rem !default;
+$table-cell-padding-sm:       .5rem !default;
+
+$table-bg:                    transparent !default;
+$table-accent-bg:             rgba($black, .05) !default;
+$table-hover-bg:              $gray-100 !default;
+$table-active-bg:             $table-hover-bg !default;
+
+$table-border-width:          $border-width !default;
+$table-border-color:          $gray-200 !default;
+
+$table-head-bg:               $gray-100 !default;
+$table-head-color:            $gray-600 !default;
+$table-head-spacer-y:         .75rem !default;
+
+$table-head-font-size:        .65rem !default;
+$table-head-font-weight:      $font-weight-bold !default;
+$table-head-text-transform:   uppercase !default;
+$table-head-letter-spacing:   1px !default;
+
+$table-body-font-size:        .8125rem !default;
+
+$table-dark-bg:               theme-color("default") !default;
+$table-dark-accent-bg:        rgba($white, .05) !default;
+$table-dark-hover-bg:         rgba($white, .075) !default;
+$table-dark-border-color:     lighten(theme-color("default"), 7%) !default;
+$table-dark-color:            $body-bg !default;
+
+$table-dark-head-bg:          lighten(theme-color("default"), 4%) !default;
+$table-dark-head-color:       lighten(theme-color("default"), 35%) !default;
 
 @import "~bootstrap/scss/variables";
